@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - DesiSpice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/desispice.com.logo.jpg" alt="DesiSpice Logo" id="logo-img">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-header-box">
+                <h1>Our Menu</h1>
+                <p>Authentic Indian Flavors Crafted with Love</p>
+            </div>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="starters">Starters</button>
+                <button class="tab-btn" data-category="vegetarian">Vegetarian</button>
+                <button class="tab-btn" data-category="non-vegetarian">Non-Vegetarian</button>
+                <button class="tab-btn" data-category="rice-biryani">Rice & Biryani</button>
+                <button class="tab-btn" data-category="breads">Breads</button>
+                <button class="tab-btn" data-category="drinks">Drinks</button>
+                <button class="tab-btn" data-category="desserts">Desserts</button>
+            </div>
+
+
+
+            <div class="menu-category active" id="starters">
+                <h2>Starters</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/starters/Masala papad.jpg" alt="Masala Papad">
+                        </div>
+                        <div class="item-info">
+                            <h3>Masala Papad</h3>
+                            <p>Crispy lentil wafers topped with onions, tomatoes, and spices</p>
+                        </div>
+                        <span class="item-price">£4.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/Paneer-Tikka.jpg" alt="Paneer Tikka">
+                        </div>
+                        <div class="item-info">
+                            <h3>Paneer Tikka</h3>
+                            <p>Grilled cottage cheese marinated in aromatic spices</p>
+                        </div>
+                        <span class="item-price">£7.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/starters/Samosa-Chaat.jpg" alt="Samosa Chaat">
+                        </div>
+                        <div class="item-info">
+                            <h3>Samosa Chaat</h3>
+                            <p>Crispy samosas topped with chutneys and yogurt</p>
+                        </div>
+                        <span class="item-price">£5.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/starters/Onion baji.jpg" alt="Onion Bhaji">
+                        </div>
+                        <div class="item-info">
+                            <h3>Onion Bhaji</h3>
+                            <p>Deep-fried onion fritters with gram flour batter</p>
+                        </div>
+                        <span class="item-price">£4.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/starters/Chicken pakora.jpg" alt="Chicken Pakora">
+                        </div>
+                        <div class="item-info">
+                            <h3>Chicken Pakora</h3>
+                            <p>Spiced chicken pieces in crispy gram flour coating</p>
+                        </div>
+                        <span class="item-price">£7.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/starters/Vegetable-Spring-Rolls.jpg" alt="Vegetable Spring Roll">
+                        </div>
+                        <div class="item-info">
+                            <h3>Vegetable Spring Roll</h3>
+                            <p>Crispy rolls filled with fresh vegetables and herbs</p>
+                        </div>
+                        <span class="item-price">£4.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/starters/Prawns koliwada.jpg" alt="Prawn Koliwada">
+                        </div>
+                        <div class="item-info">
+                            <h3>Prawn Koliwada</h3>
+                            <p>Spicy Mumbai-style fried prawns with curry leaves</p>
+                        </div>
+                        <span class="item-price">£9.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="vegetarian">
+                <h2>Vegetarian</h2>
+                <div class="menu-items">
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/vegetarian/Palak-paneer.jpg" alt="Palak Paneer">
+                        </div>
+                        <div class="item-info">
+                            <h3>Palak Paneer</h3>
+                            <p>Cottage cheese in creamy spinach curry</p>
+                        </div>
+                        <span class="item-price">£11.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/vegetarian/aloo_gobi.jpg" alt="Aloo Gobi">
+                        </div>
+                        <div class="item-info">
+                            <h3>Aloo Gobi</h3>
+                            <p>Potatoes and cauliflower cooked with aromatic spices</p>
+                        </div>
+                        <span class="item-price">£10.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/vegetarian/chana-masala.jpg" alt="Chana Masala">
+                        </div>
+                        <div class="item-info">
+                            <h3>Chana Masala</h3>
+                            <p>Chickpeas in rich tomato and onion gravy</p>
+                        </div>
+                        <span class="item-price">£10.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/vegetarian/Vegetable korma.jpg" alt="Vegetable Korma">
+                        </div>
+                        <div class="item-info">
+                            <h3>Vegetable Korma</h3>
+                            <p>Mixed vegetables in creamy coconut and cashew sauce</p>
+                        </div>
+                        <span class="item-price">£11.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/vegetarian/Dal-Tadka.jpg" alt="Dal Tadka">
+                        </div>
+                        <div class="item-info">
+                            <h3>Dal Tadka</h3>
+                            <p>Yellow lentils tempered with cumin and garlic</p>
+                        </div>
+                        <span class="item-price">£9.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/vegetarian/Baingan bharta.jpg" alt="Baingan Bharta">
+                        </div>
+                        <div class="item-info">
+                            <h3>Baingan Bharta</h3>
+                            <p>Roasted eggplant mashed with onions and spices</p>
+                        </div>
+                        <span class="item-price">£5.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/vegetarian/Punjabi-Matar-Paneer-Recipe.jpg" alt="Mutter Paneer">
+                        </div>
+                        <div class="item-info">
+                            <h3>Mutter Paneer</h3>
+                            <p>Cottage cheese and green peas in tomato gravy</p>
+                        </div>
+                        <span class="item-price">£11.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="non-vegetarian">
+                <h2>Non-Vegetarian</h2>
+                <div class="menu-items">
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/non vegetarian/butter chicken.jpg" alt="Butter Chicken">
+                        </div>
+                        <div class="item-info">
+                            <h3>Butter Chicken</h3>
+                            <p>Tender chicken in creamy tomato-based sauce</p>
+                        </div>
+                        <span class="item-price">£14.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/non vegetarian/Tikka masala.jpg" alt="Chicken Tikka Masala">
+                        </div>
+                        <div class="item-info">
+                            <h3>Chicken Tikka Masala</h3>
+                            <p>Grilled chicken in rich and creamy masala sauce</p>
+                        </div>
+                        <span class="item-price">£15.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/non vegetarian/Rogan josh.jpg" alt="Lamb Rogan Josh">
+                        </div>
+                        <div class="item-info">
+                            <h3>Lamb Rogan Josh</h3>
+                            <p>Tender lamb in aromatic Kashmiri curry</p>
+                        </div>
+                        <span class="item-price">£17.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/non vegetarian/Prawn-Curry.jpg" alt="Prawn Curry">
+                        </div>
+                        <div class="item-info">
+                            <h3>Prawn Curry</h3>
+                            <p>Fresh prawns in coconut and spice curry</p>
+                        </div>
+                        <span class="item-price">£16.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/non vegetarian/chicken chettinad.jpg" alt="Chicken Chettinad">
+                        </div>
+                        <div class="item-info">
+                            <h3>Chicken Chettinad</h3>
+                            <p>Spicy South Indian chicken with black pepper and curry leaves</p>
+                        </div>
+                        <span class="item-price">£15.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/non vegetarian/Mutton vindaloo.jpg" alt="Mutton Vindaloo">
+                        </div>
+                        <div class="item-info">
+                            <h3>Mutton Vindaloo</h3>
+                            <p>Fiery Goan curry with tender mutton and vinegar</p>
+                        </div>
+                        <span class="item-price">£18.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/non vegetarian/Fish-Malabar-Curry.avif" alt="Fish Malabar Curry">
+                        </div>
+                        <div class="item-info">
+                            <h3>Fish Malabar Curry</h3>
+                            <p>Kerala-style fish curry with coconut milk and curry leaves</p>
+                        </div>
+                        <span class="item-price">£16.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="rice-biryani">
+                <h2>Rice & Biryani</h2>
+                <div class="menu-items">
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/Rice & Biryani/vegetable-biryani.jpg" alt="Vegetable Biryani">
+                        </div>
+                        <div class="item-info">
+                            <h3>Vegetable Biryani</h3>
+                            <p>Fragrant basmati rice with mixed vegetables and aromatic spices</p>
+                        </div>
+                        <span class="item-price">£12.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/Rice & Biryani/chicken-biryani.jpg" alt="Chicken Biryani">
+                        </div>
+                        <div class="item-info">
+                            <h3>Chicken Biryani</h3>
+                            <p>Aromatic basmati rice layered with tender chicken</p>
+                        </div>
+                        <span class="item-price">£15.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/Rice & Biryani/lamb-biryani.jpg" alt="Lamb Biryani">
+                        </div>
+                        <div class="item-info">
+                            <h3>Lamb Biryani</h3>
+                            <p>Fragrant rice with succulent lamb pieces and saffron</p>
+                        </div>
+                        <span class="item-price">£17.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/Rice & Biryani/prawns biryani.jpg" alt="Prawn Biryani">
+                        </div>
+                        <div class="item-info">
+                            <h3>Prawn Biryani</h3>
+                            <p>Aromatic rice with fresh prawns and coastal spices</p>
+                        </div>
+                        <span class="item-price">£16.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/Rice & Biryani/jeera rice.JPG" alt="Jeera Rice">
+                        </div>
+                        <div class="item-info">
+                            <h3>Jeera Rice</h3>
+                            <p>Basmati rice tempered with cumin seeds</p>
+                        </div>
+                        <span class="item-price">£4.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/Rice & Biryani/Peas-Pulao.jpg" alt="Peas Pulao">
+                        </div>
+                        <div class="item-info">
+                            <h3>Peas Pulao</h3>
+                            <p>Fragrant rice cooked with green peas and whole spices</p>
+                        </div>
+                        <span class="item-price">£5.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/Rice & Biryani/steamed basmati-rice.jpg" alt="Steamed Basmati Rice">
+                        </div>
+                        <div class="item-info">
+                            <h3>Steamed Basmati Rice</h3>
+                            <p>Plain aromatic basmati rice</p>
+                        </div>
+                        <span class="item-price">£3.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="breads">
+                <h2>Breads</h2>
+                <div class="menu-items">
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/breads/butter-naan.jpg" alt="Butter Naan">
+                        </div>
+                        <div class="item-info">
+                            <h3>Butter Naan</h3>
+                            <p>Soft leavened bread brushed with butter</p>
+                        </div>
+                        <span class="item-price">£3.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/breads/garlic-naan.jpg" alt="Garlic Naan">
+                        </div>
+                        <div class="item-info">
+                            <h3>Garlic Naan</h3>
+                            <p>Naan bread topped with fresh garlic and herbs</p>
+                        </div>
+                        <span class="item-price">£4.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/breads/Tandoori-roti.jpg" alt="Tandoori Roti">
+                        </div>
+                        <div class="item-info">
+                            <h3>Tandoori Roti</h3>
+                            <p>Whole wheat bread baked in tandoor oven</p>
+                        </div>
+                        <span class="item-price">£3.49</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/breads/Stuffed_Kulcha.jpg" alt="Stuffed Kulcha">
+                        </div>
+                        <div class="item-info">
+                            <h3>Stuffed Kulcha</h3>
+                            <p>Leavened bread stuffed with spiced potatoes or onions</p>
+                        </div>
+                        <span class="item-price">£5.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/breads/Lachha-Paratha.jpg" alt="Lachha Paratha">
+                        </div>
+                        <div class="item-info">
+                            <h3>Lachha Paratha</h3>
+                            <p>Multi-layered flaky bread</p>
+                        </div>
+                        <span class="item-price">£4.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/breads/chapati.jpg" alt="Chapati">
+                        </div>
+                        <div class="item-info">
+                            <h3>Chapati</h3>
+                            <p>Traditional whole wheat flatbread</p>
+                        </div>
+                        <span class="item-price">£2.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/breads/Peshwari-Naan.jpg" alt="Peshawari Naan">
+                        </div>
+                        <div class="item-info">
+                            <h3>Peshawari Naan</h3>
+                            <p>Sweet naan stuffed with coconut, raisins, and nuts</p>
+                        </div>
+                        <span class="item-price">£5.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="drinks">
+                <h2>Drinks</h2>
+                <div class="menu-items">
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/drinks/mango lassi.jpg" alt="Mango Lassi">
+                        </div>
+                        <div class="item-info">
+                            <h3>Mango Lassi</h3>
+                            <p>Creamy yogurt drink blended with fresh mango</p>
+                        </div>
+                        <span class="item-price">£4.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/drinks/Sweet-lassi.webp" alt="Sweet Lassi">
+                        </div>
+                        <div class="item-info">
+                            <h3>Sweet Lassi</h3>
+                            <p>Traditional sweet yogurt drink</p>
+                        </div>
+                        <span class="item-price">£3.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/drinks/masala chai.jpg" alt="Masala Chai">
+                        </div>
+                        <div class="item-info">
+                            <h3>Masala Chai</h3>
+                            <p>Spiced tea with cardamom, ginger, and cinnamon</p>
+                        </div>
+                        <span class="item-price">£3.49</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/drinks/fresh masala soda.jpg" alt="Fresh Lime Soda">
+                        </div>
+                        <div class="item-info">
+                            <h3>Fresh Lime Soda</h3>
+                            <p>Refreshing lime juice with soda water</p>
+                        </div>
+                        <span class="item-price">£3.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/drinks/rose milk.jpg" alt="Rose Milk">
+                        </div>
+                        <div class="item-info">
+                            <h3>Rose Milk</h3>
+                            <p>Chilled milk flavored with rose syrup</p>
+                        </div>
+                        <span class="item-price">£4.49</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/drinks/Jal jeera.jpg" alt="Jal Jeera">
+                        </div>
+                        <div class="item-info">
+                            <h3>Jal Jeera</h3>
+                            <p>Refreshing cumin-flavored drink with mint</p>
+                        </div>
+                        <span class="item-price">£3.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/drinks/coke,sprite,fanta.jpg" alt="Soft Drinks">
+                        </div>
+                        <div class="item-info">
+                            <h3>Soft Drinks</h3>
+                            <p>Coke, Sprite, Fanta</p>
+                        </div>
+                        <span class="item-price">£2.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="desserts">
+                <h2>Desserts</h2>
+                <div class="menu-items">
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/desserts/Gulab-Jamun.jpg" alt="Gulab Jamun">
+                        </div>
+                        <div class="item-info">
+                            <h3>Gulab Jamun</h3>
+                            <p>Deep-fried milk dumplings in rose-flavored syrup</p>
+                        </div>
+                        <span class="item-price">£5.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/desserts/rasmalai.jpg" alt="Rasmalai">
+                        </div>
+                        <div class="item-info">
+                            <h3>Rasmalai</h3>
+                            <p>Soft cottage cheese dumplings in sweetened milk</p>
+                        </div>
+                        <span class="item-price">£6.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/desserts/Kheer-Rice-Pudding.webp" alt="Kheer">
+                        </div>
+                        <div class="item-info">
+                            <h3>Kheer (Rice Pudding)</h3>
+                            <p>Creamy rice pudding with cardamom and nuts</p>
+                        </div>
+                        <span class="item-price">£5.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/desserts/Gajar-ka-Halwa.webp" alt="Gajar Ka Halwa">
+                        </div>
+                        <div class="item-info">
+                            <h3>Gajar Ka Halwa</h3>
+                            <p>Sweet carrot pudding with milk and nuts</p>
+                        </div>
+                        <span class="item-price">£6.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/desserts/kulfi(mango&pistachio).jpg" alt="Kulfi">
+                        </div>
+                        <div class="item-info">
+                            <h3>Kulfi (Mango/Pistachio)</h3>
+                            <p>Traditional Indian ice cream in mango or pistachio flavor</p>
+                        </div>
+                        <span class="item-price">£5.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/desserts/Jalebi.jpg" alt="Jalebi">
+                        </div>
+                        <div class="item-info">
+                            <h3>Jalebi</h3>
+                            <p>Crispy spiral-shaped sweets soaked in sugar syrup</p>
+                        </div>
+                        <span class="item-price">£5.99</span>
+                    </div>
+                    <div class="menu-item" >
+                        <div class="item-image">
+                            <img src="images/desserts/Rasgulla.jpg" alt="Rasgulla">
+                        </div>
+                        <div class="item-info">
+                            <h3>Rasgulla</h3>
+                            <p>Spongy cottage cheese balls in sugar syrup</p>
+                        </div>
+                        <span class="item-price">£5.99</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <!-- Menu Item Modal -->
+    <div class="modal" id="item-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="" alt="" class="modal-img">
+            <h2 class="modal-title"></h2>
+            <p class="modal-description"></p>
+            <p class="modal-spice"></p>
+            <span class="modal-price"></span>
+            <button class="btn add-to-cart">Add to Order</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
