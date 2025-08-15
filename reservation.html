@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - DesiSpice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/desispice.com.logo.jpg" alt="DesiSpice Logo" id="logo-img">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservation.html" class="active">Reservation</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="reservation-section">
+        <div class="container">
+            <h1>Make a Reservation</h1>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="name">Full Name*</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date*</label>
+                        <input type="text" id="date" name="date" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Time*</label>
+                        <select id="time" name="time" required>
+                            <option value="">Select Time</option>
+                            <option value="10:00 AM to 12:00 AM">10:00 AM to 12:00 AM</option>
+                            <option value="12:00 PM TO 2:00 PM">12:00 PM TO 2:00 PM</option>
+                            <option value="2:00 PM TO 4:00 PM">2:00 PM TO 4:00 PM</option>
+                            <option value="4:00 PM TO 6:00 PM">4:00 PM TO 6:00 PM</option>
+                            <option value="6:00 PM TO 8:00 PM">6:00 PM TO 8:00 PM</option>
+                            <option value="8:00 PM TO 10:00 PM">8:00 PM TO 10:00 PM</option>
+                            <!-- More time options -->
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guests">Number of Guests*</label>
+                        <div class="guest-counter">
+                            <button type="button" class="counter-btn minus-btn" id="minus-guests">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <input type="number" id="guests" name="guests" value="1" min="1" max="15" readonly required>
+                            <button type="button" class="counter-btn plus-btn" id="plus-guests">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="occasion">Occasion (Optional)</label>
+                        <select id="occasion" name="occasion">
+                            <option value="">None</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="anniversary">Anniversary</option>
+                            <option value="business">Business Dinner</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="special-requests">Special Requests</label>
+                    <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Book Table</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Reservation Confirmation Modal -->
+    <div class="modal" id="confirmation-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <i class="fas fa-check-circle success-icon"></i>
+            <h2>Reservation Confirmed!</h2>
+            <div class="reservation-details">
+                <p><strong>Name:</strong> <span id="confirm-name"></span></p>
+                <p><strong>Date:</strong> <span id="confirm-date"></span></p>
+                <p><strong>Time:</strong> <span id="confirm-time"></span></p>
+                <p><strong>Guests:</strong> <span id="confirm-guests"></span></p>
+            </div>
+            <p>We've sent a confirmation to your email.</p>
+            <button class="btn" id="close-confirmation">Done</button>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
